@@ -1,0 +1,85 @@
+.home-page {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-page h1 {
+  font-size: 4rem;
+  font-family: var(--primary-font);
+  margin-bottom: 3rem;
+}
+.home-page form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.home-page input {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  height: 50px;
+  padding: 0 1.5rem;
+  background: aliceblue;
+  width: 400px;
+  font-family: var(--secondary-font);
+  letter-spacing: 0.5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.home-page button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background: rgb(6, 109, 112);
+  height: 50px;
+  letter-spacing: 0.5px;
+  padding: 0 1.5rem;
+  color: white;
+  font-family: var(--secondary-font);
+  transform: all 0.23s;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.home-page button:hover {
+  opacity: 0.7;
+}
+.home-page ul li {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  font-family: var(--secondary-font);
+}
+.home-page .short-url {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.home-page .short-url a {
+  font-size: 1.6rem;
+  font-family: var(--secondary-font);
+  height: 50px;
+  background: aliceblue;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  pointer-events: none;
+}
+/* responsive design */
+@media (max-width: 576px) {
+  .home-page input {
+    width: 100%;
+  }
+  .home-page button {
+    padding: 0 1.5rem;
+  }
+  .home-page .short-url a {
+    width: 100%;
+  }
+}
