@@ -15,7 +15,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-  width: 100%;
 }
 .home-page input {
   border: none;
@@ -54,7 +53,6 @@
   font-family: var(--secondary-font);
 }
 .home-page .short-url {
-  width: 100%;
   display: flex;
   align-items: center;
   margin: 2rem 0;
@@ -73,11 +71,17 @@
 }
 /* responsive design */
 @media (max-width: 576px) {
+  .home-page form {
+    width: 100%;
+  }
   .home-page input {
     width: 100%;
   }
   .home-page button {
     padding: 0 1.5rem;
+  }
+  .home-page .short-url {
+    width: 100%;
   }
   .home-page .short-url a {
     width: 100%;

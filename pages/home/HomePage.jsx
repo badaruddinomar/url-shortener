@@ -2,7 +2,7 @@ import { useState } from "react";
 import { backendUrl } from "../../data";
 import "./homePage.css";
 import { Link } from "react-router-dom";
-const frontendUrl = "http://localhost:5173";
+const frontendUrl = import.meta.env.VITE_FRONTEND_URL;
 
 const HomePage = () => {
   const [fullUrl, setFullUrl] = useState("");
@@ -53,8 +53,8 @@ const HomePage = () => {
       </ul>
       <div className="short-url">
         <Link
-          to={`http://localhost:5173/${shortUrl}`}
-        >{`http://localhost:5173/${shortUrl}`}</Link>
+          to={`${frontendUrl}/${shortUrl}`}
+        >{`${frontendUrl}/${shortUrl}`}</Link>
         <button onClick={copyHandler} type="button">
           {copiedText ? `Copied` : "Copy"}
         </button>
